@@ -1,0 +1,81 @@
+body.b1{
+background-image: linear-gradient(to right, #17EAD9, #6078EA);
+}
+
+h1.heading{
+	font-family: 'Lobster', cursive;
+	font-size: 60px;
+	text-align: center;
+	color: white;
+	text-shadow: 3px 3px 5px;
+}
+
+img.i1{
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	display: block;
+	filter: blur(10px);
+	/* -webkit-transition: blur(18px); */
+}
+
+div.ip1{
+	text-align: center;
+
+}
+input.t1{
+	border: dotted hotpink 5px;
+}
+
+button.b1{
+	margin-left: auto;
+	margin-right: auto;
+	/*background-color: linear-gradient(to right, #17EAD9, #6078EA);*/
+	font-size: 20px;
+	padding: 5px;
+	border-radius: 12px;
+	border: solid 5px ;
+	background-color: black;
+	color: white;
+	transition-duration: 0.4s;
+	cursor: pointer;
+
+}
+
+button.b1:hover{
+	background-color: white;
+	color: black;
+}
+
+div.db{
+	/*justify-content: center;
+	align-items: center;
+	display: block;*/
+    text-align: center;
+}
+
+div.rans{
+	background-color: green;
+	border-radius: 10px;
+	text-align: center;
+	color: white;
+	font-family: 'Potta One', cursive;
+}
+
+div.wans{
+	background-color: red;
+	border-radius: 10px;
+	text-align: center;
+	color: white;
+	font-family: 'Potta One', cursive;
+}
+
+i.icon{
+	text-align: center;
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 60px;
+	cursor: pointer;
+}
+

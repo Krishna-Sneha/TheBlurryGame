@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>blurry game</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+
+</head>
+<body class="b1"> 
+    <p>
+        <h1 class="heading">THE BLURRY</h1>
+        <br><br>
+        <p style="text-align: center;">
+        <button id="start" style="font-family: 'Potta One', cursive; text-align: center; background-color: black; color: white; font-weight: bold; font-size: 20px; cursor: pointer;" onclick="func_start()" >START THE GAME</button>
+        </p>
+        <br>
+
+        <!-- 1st IMAGE -->
+
+        <img src="img1.jpg" id="p1" style="visibility: hidden;" height="500px" width="500px" class="i1">
+        <!-- <img src="img1.jpg" id="img1" style="visibility: collapse;" height="0" width="500px"> -->
+        <br>
+
+        <div class="ip1" id="ip1" style="visibility: hidden;">
+            <p class="p1">Guess this?</p>
+            <input type="text" id="t1" class="t1" name="tf" size="50">
+        </div>
+        <br>
+        <div class="db" id="db" style="visibility: hidden;">
+            <button class="b1" onclick="func1()">SUBMIT</button></div>
+            <br>
+            <div id="r_ans1" class="rans" style="border: 10px solid green; visibility: hidden;">Hey correct!</div>
+            <div id="w_ans1" class="wans" style="border: 10px solid red; visibility: hidden;">Sorry!</div>
+
+            <i class="material-icons icon" style="visibility: hidden;" id="next_icon1" onclick="func_next1()"> keyboard_arrow_down</i>
+        </p>
+
+        <!-- 2nd IMAGE -->
+
+        <p id="img2" style="visibility: hidden">
+            <img src="img2.jpg" id="p2" height="500px" width="500px" class="i1">
+            <br>
+
+            <div class="ip1" id="ip2" style="visibility: hidden;">
+                <p class="p1">Guess this?</p>
+                <input type="text" class="t1" id="t2" name="tf" size="50">
+            </div>
+
+            <br>
+            <div class="db" id="db2" style="visibility: hidden;"><button class="b1" onclick="func2()" >SUBMIT</button>
+            </div>
+            <br>
+            <div id="r_ans2" class="rans" style="border: 10px solid green; visibility: hidden;">hey correct</div>
+            <div id="w_ans2" class="wans" style="border: 10px solid red; visibility: hidden;">Sorry!</div>
+
+            <i class="material-icons icon" id="next_icon2" style="visibility: hidden;" onclick="func_next2()"> keyboard_arrow_down </i>
+        </p>
+
+        <!-- 3rd IMAGE -->
+
+        <p id="img3" style="visibility: hidden">
+            <img src="img3.jpg" id="p3" height="500px" width="500px" class="i1">
+            <br>
+
+            <div class="ip1" id="ip3" style="visibility: hidden;">
+                <p class="p1">Guess this?</p>
+                <input type="text" class="t1" id="t3" name="tf" size="50">
+            </div>
+
+            <br>
+            <div class="db" id="db3" style="visibility: hidden;"><button class="b1" onclick="func3()" >SUBMIT</button></div>
+            <br>
+            <div id="r_ans3" class="rans" style="border: 10px solid green; visibility: hidden;">hey correct</div>
+            <div id="w_ans3" class="wans" style="border: 10px solid red; visibility: hidden;">Sorry!</div>
+
+            <i class="material-icons icon" id="next_icon3" style="visibility: hidden;" onclick="func_next3()"> keyboard_arrow_down </i>
+        </p>
+
+        <!-- 4th IMAGE -->
+
+        <p id="img4" style="visibility: hidden">
+            <img src="img4.jpg" id="p4" height="500px" width="500px" class="i1">
+            <br>
+
+            <div class="ip1" id="ip4" style="visibility: hidden;">
+                <p class="p1">Guess this?</p>
+                <input type="text" class="t1" id="t4" name="tf" size="50">
+            </div>
+
+            <br>
+            <div class="db" id="db4" style="visibility: hidden;"><button class="b1" onclick="func4()" >SUBMIT</button></div>
+            <br>
+            <div id="r_ans4" class="rans" style="border: 10px solid green; visibility: hidden;">hey correct</div>
+            <div id="w_ans4" class="wans" style="border: 10px solid red; visibility: hidden;">Sorry!</div>
+
+            <i class="material-icons icon" id="next_icon4" style="visibility: hidden;" onclick="func_next4()"> keyboard_arrow_down </i>
+        </p>
+
+        <!-- 5th IMAGE -->
+
+        <p id="img5" style="visibility: hidden;">
+            <img src="img5.jpg" id="p5" height="500px" width="500px" class="i1">
+            <br>
+
+            <div class="ip1" id="ip5" style="visibility: hidden;">
+                <p class="p1">Guess this?</p>
+                <input type="text" class="t1" id="t5" name="tf" size="50">
+            </div>
+
+            <br>
+            <div class="db" id="db5" style="visibility: hidden;"><button class="b1" onclick="func5()" >SUBMIT</button></div>
+            <br>
+            <div id="r_ans5" class="rans" style="border: 10px solid green; visibility: hidden;">hey correct</div>
+            <div id="w_ans5" class="wans" style="border: 10px solid red; visibility: hidden;">Sorry!</div>
+
+            <i class="material-icons icon" id="next_icon5" style="visibility: hidden;" onclick="func_next5()"> keyboard_arrow_down </i>
+        </p>
+
+
+        <!-- 6th IMAGE -->
+
+        <p id="img6" style="visibility: hidden;">
+            <img src="img6.jpg" id="p6" height="500px" width="500px" class="i1">
+            <br>
+
+            <div class="ip1" id="ip6" style="visibility: hidden;">
+                <p class="p1">Guess this?</p>
+                <input type="text" class="t1" id="t6" name="tf" size="50">
+            </div>
+
+            <br>
+            <div class="db" id="db6" style="visibility: hidden;"><button class="b1" onclick="func6()" >SUBMIT</button></div>
+            <br>
+            <div id="r_ans6" class="rans" style="border: 10px solid green; visibility: hidden;">hey correct</div>
+            <div id="w_ans6" class="wans" style="border: 10px solid red; visibility: hidden;">Sorry!</div>
+
+            <i class="material-icons icon" id="next_icon6" style="visibility: hidden;" onclick="func_next6()"> keyboard_arrow_down </i>
+        </p>
+
+       
+       <!-- 7th IMAGE -->
+
+        <p id="img7" style="visibility: hidden;">
+            <img src="img7.jpg" id="p7" height="500px" width="500px" class="i1">
+            <br>
+
+            <div class="ip1" id="ip7" style="visibility: hidden;">
+                <p class="p1">Guess this?</p>
+                <input type="text" class="t1" id="t7" name="tf" size="50">
+            </div>
+
+            <br>
+            <div class="db" id="db7" style="visibility: hidden;"><button class="b1" onclick="func7()" >SUBMIT</button></div>
+            <br>
+            <div id="r_ans7" class="rans" style="border: 10px solid green; visibility: hidden;">hey correct</div>
+            <div id="w_ans7" class="wans" style="border: 10px solid red; visibility: hidden;">Sorry!</div>
+
+            <i class="material-icons icon" id="next_icon7" style="visibility: hidden;" onclick="func_next7()"> keyboard_arrow_down </i>
+        </p>
+
+        <!-- 8th IMAGE -->
+
+        <p id="img8" style="visibility: hidden;">
+            <img src="img8.jpg" id="p8" height="500px" width="500px" class="i1">
+            <br>
+
+            <div class="ip1" id="ip8" style="visibility: hidden;">
+                <p class="p1">Guess this?</p>
+                <input type="text" class="t1" id="t8" name="tf" size="50">
+            </div>
+
+            <br>
+            <div class="db" id="db8" style="visibility: hidden;"><button class="b1" onclick="func8()" >SUBMIT</button></div>
+            <br>
+            <div id="r_ans8" class="rans" style="border: 10px solid green; visibility: hidden;">hey correct</div>
+            <div id="w_ans8" class="wans" style="border: 10px solid red; visibility: hidden;">Sorry!</div>
+
+            <i class="material-icons icon" id="next_icon8" style="visibility: hidden;" onclick="func_next8()"> keyboard_arrow_down </i>
+        </p>
+
+        <!-- 9th IMAGE -->
+
+        <p id="img9" style="visibility: hidden;">
+            <img src="img9.jpg" id="p9" height="500px" width="500px" class="i1">
+            <br>
+
+            <div class="ip1" id="ip9" style="visibility: hidden;">
+                <p class="p1">Guess this?</p>
+                <input type="text" class="t1" id="t9" name="tf" size="50">
+            </div>
+
+            <br>
+            <div class="db" id="db9" style="visibility: hidden;"><button class="b1" onclick="func9()" >SUBMIT</button></div>
+            <br>
+            <div id="r_ans9" class="rans" style="border: 10px solid green; visibility: hidden;">hey correct</div>
+            <div id="w_ans9" class="wans" style="border: 10px solid red; visibility: hidden;">Sorry!</div>
+
+            <i class="material-icons icon" id="next_icon9" style="visibility: hidden;" onclick="func_next9()"> keyboard_arrow_down </i>
+        </p>
+
+
+        <!-- 10th IMAGE -->
+
+        <p id="img10" style="visibility: hidden;">
+            <img src="img10.jpg" id="p10" height="500px" width="500px" class="i1">
+            <br>
+
+            <div class="ip1" id="ip10" style="visibility: hidden;">
+                <p class="p1">Guess this?</p>
+                <input type="text" class="t1" id="t10" name="tf" size="50">
+            </div>
+
+            <br>
+            <div class="db" id="db10" style="visibility: hidden;"><button class="b1" onclick="func10()" >SUBMIT</button></div>
+            <br>
+            <div id="r_ans10" class="rans" style="border: 10px solid green; visibility: hidden;">hey correct</div>
+            <div id="w_ans10" class="wans" style="border: 10px solid red; visibility: hidden;">Sorry!</div>
+
+            <i class="material-icons icon" id="next_icon10" style="visibility: hidden;" onclick="func_next10()"> keyboard_arrow_down </i>
+        </p>
+
+
+        <!-- 11th IMAGE -->
+
+        <p id="img11" style="visibility: hidden;">
+            <img src="img11.jpg" id="p11" height="500px" width="500px" class="i1">
+            <br>
+
+            <div class="ip1" id="ip11" style="visibility: hidden;">
+                <p class="p1">Guess this?</p>
+                <input type="text" class="t1" id="t11" name="tf" size="50">
+            </div>
+
+            <br>
+            <div class="db" id="db11" style="visibility: hidden;"><button class="b1" onclick="func11()" >SUBMIT</button></div>
+            <br>
+            <div id="r_ans11" class="rans" style="border: 10px solid green; visibility: hidden;">hey correct</div>
+            <div id="w_ans11" class="wans" style="border: 10px solid red; visibility: hidden;">Sorry!</div>
+
+            <i class="material-icons icon" id="next_icon11" style="visibility: hidden;" onclick="func_next11()"> keyboard_arrow_down </i>
+        </p>
+
+
+        <!-- 12th IMAGE -->
+
+        <p id="img12" style="visibility: hidden;">
+            <img src="img12.jpg" id="p12" height="500px" width="500px" class="i1">
+            <br>
+
+            <div class="ip1" id="ip12" style="visibility: hidden;">
+                <p class="p1">Guess this?</p>
+                <input type="text" class="t1" id="t12" name="tf" size="50">
+            </div>
+
+            <br>
+            <div class="db" id="db12" style="visibility: hidden;"><button class="b1" onclick="func12()" >SUBMIT</button></div>
+            <br>
+            <div id="r_ans12" class="rans" style="border: 10px solid green; visibility: hidden;">hey correct</div>
+            <div id="w_ans12" class="wans" style="border: 10px solid red; visibility: hidden;">Sorry!</div>
+
+            <!-- <i class="material-icons icon" id="next_icon12" style="visibility: hidden;" onclick="func_next12()"> keyboard_arrow_down </i> -->
+           <p style="font-family: 'Potta One', cursive; text-align: center; color: white; font-weight: bold; font-size: 40px; visibility: hidden;" id="comp">Great your game is over!!
+            <br>
+
+            <button style="font-family: 'Potta One', cursive; text-align: center; background-color: black; color: white; font-weight: bold; font-size: 20px; cursor: pointer;"  onclick="func_result()">click here to check your score.</button>
+           </p>
+        </p>
+
+    </body>
+
+    </html
